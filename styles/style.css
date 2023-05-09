@@ -1,0 +1,8 @@
+html {
+    font-family: 'Poppins', serif;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+}

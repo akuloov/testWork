@@ -1,0 +1,25 @@
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__text {
+    margin-left: 11px;
+    padding-top: 2px;
+    display: flex;
+}
+
+.logo__name {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.logo__icon {
+    width: 37px;
+    height: 37px;
+}
+
+.logo__version {
+    margin-left: 4px;
+    padding-top: 8px;
+}
