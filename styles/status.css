@@ -1,0 +1,22 @@
+.status {
+    font-weight: 500;
+    font-size: 14px;
+    width: 80px;
+    height: 29px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status--active {
+    background: rgba(22, 192, 152, 0.38);
+    border: 1px solid #00B087;
+    color: #008767;
+}
+
+.status--inactive {
+    background: #FFC5C5;
+    border: 1px solid #DF0404;
+    color: #DF0404;
+}

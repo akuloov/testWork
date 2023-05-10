@@ -1,0 +1,29 @@
+.input {
+    display: flex;
+    max-width: 216px;
+    height: 38px;
+    position: relative;
+}
+
+.input__input {
+    background: #F9FBFF;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0 10px 40px;
+    outline: none;
+}
+
+.input__input[placeholder] {
+    color: #B5B7C0;
+    font-size: 12px;
+}
+
+.input__icon {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #7E7E7E;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}

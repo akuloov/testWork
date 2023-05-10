@@ -14,6 +14,10 @@
     <link href="styles/user.css" rel="stylesheet" type="text/css">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
     <link href="styles/customers.css" rel="stylesheet" type="text/css">
+    <link href="styles/input.css" rel="stylesheet" type="text/css">
+    <link href="styles/table.css" rel="stylesheet" type="text/css">
+    <link href="styles/customer.css" rel="stylesheet" type="text/css">
+    <link href="styles/status.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
@@ -125,7 +129,161 @@
                     <div class="customers__top-text">All Customers</div>
                     <div class="customers__bottom-text">Active Members</div>
                 </div>
-                <input type="text">
+                <div class="input">
+                    <svg class="input__icon">
+                        <use href="sprite.svg#search"></use>
+                    </svg>
+                    <input class="input__input" type="text" placeholder="Search">
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                <tr class="table__positions">
+                    <th class="table__position table__position--first-border">Customer Name</th>
+                    <th class="table__position">Company</th>
+                    <th class="table__position">Phone Number</th>
+                    <th class="table__position">Email</th>
+                    <th class="table__position">Country</th>
+                    <th class="table__position table__position--last-border">Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Jane Cooper</th>
+                    <th class="table__customer-position">Microsoft</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:2255550118">(225) 555-0118</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:jane@microsoft.com">jane@microsoft.com</a>
+                    </th>
+                    <th class="table__customer-position">United States</th>
+                    <th class="table__customer-position">
+                        <div class="status status--active">Active</div>
+                    </th>
+                </tr>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Floyd Miles</th>
+                    <th class="table__customer-position">Yahoo</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:2055550100">(205) 555-0100</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:floyd@yahoo.com">floyd@yahoo.com</a>
+                    </th>
+                    <th class="table__customer-position">Kiribati</th>
+                    <th class="table__customer-position">
+                        <div class="status status--inactive">Inactive</div>
+                    </th>
+                </tr>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Ronald Richards</th>
+                    <th class="table__customer-position">Adobe</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:3025550107">(302) 555-0107</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:ronald@adobe.com">ronald@adobe.com</a>
+                    </th>
+                    <th class="table__customer-position">Israel</th>
+                    <th class="table__customer-position">
+                        <div class="status status--inactive">Inactive</div>
+                    </th>
+                </tr>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Marvin McKinney</th>
+                    <th class="table__customer-position">Tesla</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:2525550126">(252) 555-0126</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:marvin@tesla.com">marvin@tesla.com</a>
+                    </th>
+                    <th class="table__customer-position">Iran</th>
+                    <th class="table__customer-position">
+                        <div class="status status--active">Active</div>
+                    </th>
+                </tr>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Jerome Bell</th>
+                    <th class="table__customer-position">Google</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:6295550129">(629) 555-0129</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:jerome@google.com">jerome@google.com</a>
+                    </th>
+                    <th class="table__customer-position">Réunion</th>
+                    <th class="table__customer-position">
+                        <div class="status status--active">Active</div>
+                    </th>
+                </tr>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Kathryn Murphy</th>
+                    <th class="table__customer-position">Microsoft</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:4065550120">(406) 555-0120</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:kathryn@microsoft.com">kathryn@microsoft.com</a>
+                    </th>
+                    <th class="table__customer-position">Curaçao</th>
+                    <th class="table__customer-position">
+                        <div class="status status--active">Active</div>
+                    </th>
+                </tr>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Jacob Jones</th>
+                    <th class="table__customer-position">Yahoo</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:2085550112">(208) 555-0112</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:jacob@yahoo.com">jacob@yahoo.com</a>
+                    </th>
+                    <th class="table__customer-position">Brazil</th>
+                    <th class="table__customer-position">
+                        <div class="status status--active">Active</div>
+                    </th>
+                </tr>
+                <tr class="table__customer">
+                    <th class="table__customer-position">Kristin Watson</th>
+                    <th class="table__customer-position">Facebook</th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link" href="tel:7045550127">(704) 555-0127</a>
+                    </th>
+                    <th class="table__customer-position">
+                        <a class="table__customer-position--link"
+                           href="mailto:kristin@facebook.com">kristin@facebook.com</a>
+                    </th>
+                    <th class="table__customer-position">Åland Islands</th>
+                    <th class="table__customer-position">
+                        <div class="status status--inactive">Inactive</div>
+                    </th>
+                </tr>
+                </tbody>
+            </table>
+            <div class="customers__footer">
+                <div class="customers__data-counter">
+                    Showing data 1 to 8 of 256K entries
+                </div>
+                <div class="customers__pages">
+                    <div class="customers__page"><</div>
+                    <div class="customers__page">1</div>
+                    <div class="customers__page">2</div>
+                    <div class="customers__page">3</div>
+                    <div class="customers__page">4</div>
+                    <div class="customers__page--dots">...</div>
+                    <div class="customers__page">40</div>
+                    <div class="customers__page customers__page--no-margin">></div>
+                </div>
             </div>
         </div>
     </main>

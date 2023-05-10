@@ -1,0 +1,77 @@
+.table {
+    margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.table__positions {
+    color: #B5B7C0;
+    font-weight: 500;
+    font-size: 14px;
+    border-bottom: 1px solid #EEE;
+}
+
+.table__position--name {
+    padding-right: 57px;
+}
+
+.table__position--company {
+    padding-right: 61px;
+}
+
+.table__position--phone {
+    padding-right: 52px;
+}
+
+.table__position--email {
+    padding-right: 168px;
+}
+
+.table__position--country {
+    padding-right: 96px;
+}
+
+.table__position {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.table__position--first-border::before {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #EEE;
+    position: relative;
+    top: 32px;
+    right: 34px;
+}
+
+.table__position--last-border::after {
+    display: block;
+    content: "";
+    height: 1px;
+    background-color: #EEE;
+    position: relative;
+    top: 15px;
+    left: 33px;
+}
+
+.table__customer-position {
+    font-size: 14px;
+    font-weight: 500;
+    color: #292D32;
+    text-align: left;
+    border-bottom: 1px solid #EEE;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 40px;
+    white-space: nowrap;
+}
+
+.table__customer-position--link {
+    color: #292D32;
+    text-decoration: none;
+}

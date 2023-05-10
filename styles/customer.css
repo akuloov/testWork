@@ -1,0 +1,29 @@
+.customer {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #EEE;
+    color: #292D32;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+}
+
+.customer__name {
+    max-width: 172px;
+}
+
+.customer__company {
+    max-width: 131px;
+}
+
+.customer__phone {
+    max-width: 156px;
+}
+
+.customer__email {
+    max-width: 207px;
+}
+
+.customer__country {
+    max-width: 152px;
+}

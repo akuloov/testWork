@@ -1,7 +1,6 @@
 .aside {
     box-shadow: 0 10px 60px rgba(226, 236, 249, 0.5);
     width: 306px;
-    height: 100vh;
     padding-left: 28px;
     padding-top: 38px;
     padding-bottom: 77px;
@@ -11,6 +10,7 @@
 
 .aside__logo {
     margin-bottom: 67px;
+    padding-right: 10px;
 }
 
 .aside__user {

@@ -1,7 +1,5 @@
 .main {
-    padding-left: 71px;
-    padding-top: 41px;
-    padding-right: 95px;
+    padding: 45px 95px 50px 71px;
 }
 
 .main__greeting {
