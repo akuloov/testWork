@@ -6,3 +6,7 @@ html {
 .wrapper {
     display: flex;
 }
+
+.hide {
+    display: none;
+}

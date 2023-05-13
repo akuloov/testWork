@@ -13,6 +13,22 @@
     cursor: pointer;
 }
 
+.nav-item--active {
+    background: #5932EA;
+}
+
+.nav-item__icon--active {
+    stroke: #fff !important;
+}
+
+.nav-item__text--active {
+    color: #fff !important;
+}
+
+.nav-item__chevron--active {
+    stroke: #fff !important;
+}
+
 .nav-item:hover {
     background: #5932EA;
 }

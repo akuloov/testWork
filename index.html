@@ -5,8 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="styles/fonts.css" rel="stylesheet" type="text/css">
     <link href="styles/aside.css" rel="stylesheet" type="text/css">
     <link href="styles/logo.css" rel="stylesheet" type="text/css">
@@ -18,13 +18,13 @@
     <link href="styles/table.css" rel="stylesheet" type="text/css">
     <link href="styles/customer.css" rel="stylesheet" type="text/css">
     <link href="styles/status.css" rel="stylesheet" type="text/css">
+    <link href="styles/mediaQueries.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
 <div class="wrapper">
     <aside class="aside">
-        <div class="aside__logo">
-            <div class="logo">
+            <div class="aside__logo logo">
                 <svg class="logo__icon">
                     <use href="sprite.svg#logoIcon"></use>
                 </svg>
@@ -33,7 +33,6 @@
                     <div class="logo__version">v.01</div>
                 </div>
             </div>
-        </div>
         <nav class="nav">
             <div class="nav__nav-item">
                 <div class="nav-item">
@@ -46,7 +45,7 @@
                 </div>
             </div>
             <div class="nav__nav-item">
-                <div class="nav-item nav__nav-item">
+                <div class="nav-item">
                     <div class="nav-item__container">
                         <svg class="nav-item__icon">
                             <use href="sprite.svg#square"></use>
@@ -59,14 +58,14 @@
                 </div>
             </div>
             <div class="nav__nav-item">
-                <div class="nav-item">
+                <div class="nav-item nav-item--active">
                     <div class="nav-item__container">
-                        <svg class="nav-item__icon nav-item__icon--stroke">
+                        <svg class="nav-item__icon nav-item__icon--stroke nav-item__icon--active">
                             <use href="sprite.svg#userLogo"></use>
                         </svg>
-                        <div class="nav-item__text">Customers</div>
+                        <div class="nav-item__text nav-item__text--active">Customers</div>
                     </div>
-                    <svg class="nav-item__chevron">
+                    <svg class="nav-item__chevron nav-item__chevron--active">
                         <use href="sprite.svg#chevron"></use>
                     </svg>
                 </div>
@@ -123,7 +122,7 @@
     </aside>
     <main class="main">
         <div class="main__greeting">Hello Evano 👋🏼,</div>
-        <div class="customers">
+        <div class="customers main__customers">
             <div class="customers__header">
                 <div class="customers__text-container">
                     <div class="customers__top-text">All Customers</div>
@@ -133,18 +132,18 @@
                     <svg class="input__icon">
                         <use href="sprite.svg#search"></use>
                     </svg>
-                    <input class="input__input" type="text" placeholder="Search">
+                    <input id="input" class="input__input" type="text" placeholder="Search">
                 </div>
             </div>
             <table class="table">
                 <thead>
                 <tr class="table__positions">
-                    <th class="table__position table__position--first-border">Customer Name</th>
+                    <th class="table__position table__position--first-item">Customer Name</th>
                     <th class="table__position">Company</th>
                     <th class="table__position">Phone Number</th>
                     <th class="table__position">Email</th>
                     <th class="table__position">Country</th>
-                    <th class="table__position table__position--last-border">Status</th>
+                    <th class="table__position table__position--last-item">Status</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -159,7 +158,7 @@
                            href="mailto:jane@microsoft.com">jane@microsoft.com</a>
                     </th>
                     <th class="table__customer-position">United States</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--active">Active</div>
                     </th>
                 </tr>
@@ -174,7 +173,7 @@
                            href="mailto:floyd@yahoo.com">floyd@yahoo.com</a>
                     </th>
                     <th class="table__customer-position">Kiribati</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--inactive">Inactive</div>
                     </th>
                 </tr>
@@ -189,7 +188,7 @@
                            href="mailto:ronald@adobe.com">ronald@adobe.com</a>
                     </th>
                     <th class="table__customer-position">Israel</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--inactive">Inactive</div>
                     </th>
                 </tr>
@@ -204,7 +203,7 @@
                            href="mailto:marvin@tesla.com">marvin@tesla.com</a>
                     </th>
                     <th class="table__customer-position">Iran</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--active">Active</div>
                     </th>
                 </tr>
@@ -219,7 +218,7 @@
                            href="mailto:jerome@google.com">jerome@google.com</a>
                     </th>
                     <th class="table__customer-position">Réunion</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--active">Active</div>
                     </th>
                 </tr>
@@ -234,7 +233,7 @@
                            href="mailto:kathryn@microsoft.com">kathryn@microsoft.com</a>
                     </th>
                     <th class="table__customer-position">Curaçao</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--active">Active</div>
                     </th>
                 </tr>
@@ -249,7 +248,7 @@
                            href="mailto:jacob@yahoo.com">jacob@yahoo.com</a>
                     </th>
                     <th class="table__customer-position">Brazil</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--active">Active</div>
                     </th>
                 </tr>
@@ -264,7 +263,7 @@
                            href="mailto:kristin@facebook.com">kristin@facebook.com</a>
                     </th>
                     <th class="table__customer-position">Åland Islands</th>
-                    <th class="table__customer-position">
+                    <th class="table__customer-position table__customer-position--right-padding">
                         <div class="status status--inactive">Inactive</div>
                     </th>
                 </tr>
@@ -275,19 +274,20 @@
                     Showing data 1 to 8 of 256K entries
                 </div>
                 <div class="customers__pages">
-                    <div class="customers__page"><</div>
-                    <div class="customers__page">1</div>
+                    <div class="customers__page-list"><</div>
+                    <div class="customers__page customers__page--active">1</div>
                     <div class="customers__page">2</div>
                     <div class="customers__page">3</div>
                     <div class="customers__page">4</div>
                     <div class="customers__page--dots">...</div>
                     <div class="customers__page">40</div>
-                    <div class="customers__page customers__page--no-margin">></div>
+                    <div class="customers__page-list customers__page-list--no-margin">></div>
                 </div>
             </div>
         </div>
     </main>
 </div>
-<script src="script.js"></script>
+<script src="scripts/nav.js"></script>
+<script src="scripts/pages.js"></script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+@media (max-width: 1440px) {
+    .main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1310px) {
+    .main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .aside__logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside {
+        padding-left: 10px;
+    }
+
+    .nav__nav-item {
+        max-width: 170px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .table__customer-position {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 1183px) {
+    .table__position--first-item::before {
+        top: 38px;
+    }
+
+    .table__position--last-item::after {
+        top: 23px;
+    }
+}
+
+@media (max-width: 1145px) {
+    .table__position--first-item::before {
+        top: 48px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .table__customer-position {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 870px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .nav__nav-item {
+        width: 170px;
+    }
+
+    .aside {
+        width: auto;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .aside__logo {
+        margin-bottom: 20px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .table__position--first-item::before {
+        top: 31px;
+    }
+
+    .table__position--last-item::after {
+        top: 15px;
+    }
+}
+
+@media (max-width: 743px) {
+    .table__position--first-item::before {
+        top: 47px;
+    }
+
+    .table__position--last-item::after {
+        top: 23px;
+    }
+}
+
+@media (max-width: 670px) {
+    .customers__footer {
+        flex-direction: column;
+    }
+
+    .customers__pages {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .table {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .table__position--first-item::after {
+        right: 12px;
+    }
+
+    .table__position--last-item::after {
+        left: 13px;
+    }
+
+    .main__customers {
+        max-width: 100%;
+        overflow-x: scroll;
+        -webkit-box-shadow: inset -30px 0 15px -25px rgba(0,0,0,0.6);
+        box-shadow: inset -30px 0 15px -25px rgba(0,0,0,0.6);
+    }
+
+    .customers__header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .customers__text-container {
+        margin-bottom: 20px;
+    }
+}

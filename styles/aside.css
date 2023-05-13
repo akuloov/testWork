@@ -1,16 +1,13 @@
 .aside {
     box-shadow: 0 10px 60px rgba(226, 236, 249, 0.5);
     width: 306px;
-    padding-left: 28px;
-    padding-top: 38px;
-    padding-bottom: 77px;
+    padding: 38px 10px 77px 28px;
     display: flex;
     flex-direction: column;
 }
 
 .aside__logo {
     margin-bottom: 67px;
-    padding-right: 10px;
 }
 
 .aside__user {

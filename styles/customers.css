@@ -62,13 +62,34 @@
     cursor: pointer;
 }
 
+.customers__page--active {
+    background: #5932EA;
+    border: 1px solid #5932EA;
+    color: #fff;
+}
+
 .customers__page:hover {
     background: #5932EA;
     border: 1px solid #5932EA;
     color: #fff;
 }
 
-.customers__page--no-margin {
+.customers__page-list {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    color: #404B52;
+    margin-right: 12px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.customers__page-list--no-margin {
     margin-right: 0;
 }
 
